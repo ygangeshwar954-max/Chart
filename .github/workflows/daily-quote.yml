@@ -25,8 +25,8 @@ jobs:
 
       - name: Commit and push if there are changes
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "ygangeshwar954-max"
+          git config user.email "ygangeshwar954@gmail.com"
           git add log/
           git diff --staged --quiet || git commit -m "Daily quote log: $(date -u +'%Y-%m-%d')"
           git push
