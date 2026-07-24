@@ -22,7 +22,7 @@ def fetch_quote():
 
 def main():
     os.makedirs(LOG_DIR, exist_ok=True)
-    today = datetime.date.today().isoformat()
+    today = datetime.date.utcnow().isoformat()
     filepath = os.path.join(LOG_DIR, f"{today}.md")
 
     if os.path.exists(filepath):
